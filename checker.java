@@ -62,7 +62,7 @@ public class checker extends SysYParserBaseVisitor<Void>{
         return new Value(IntType.getI32(), null, curScope, num.getNum());
     }
 
-    public boolean Call2Value(CallExpression ce) { 
+    public boolean Call2Value(CallExpression ce) {
         // to do
         return true;
     }
@@ -83,7 +83,7 @@ public class checker extends SysYParserBaseVisitor<Void>{
         }
 
         if (curNode == rootNode) {
-            // to do 
+            // to do
         } else {
             // to do
         }
@@ -154,7 +154,7 @@ public class checker extends SysYParserBaseVisitor<Void>{
                 }
 
                 if (curInst.isJump()) {
-                    // to do 
+                    // to do
                 }
             }
 
@@ -169,7 +169,7 @@ public class checker extends SysYParserBaseVisitor<Void>{
                     }
                 } else {
                     checkFlag = Call2Value((CallExpression)curInst.getRExp());
-                }               
+                }
             }
 
             if (checkFlag == false) {

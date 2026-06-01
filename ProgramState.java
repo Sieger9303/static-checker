@@ -1,18 +1,16 @@
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Stack;
 
 import org.antlr.v4.runtime.misc.Pair;
 import com.microsoft.z3.*;
 
-public class programstate {
+public class ProgramState {
     private Scope scope;
     private HashMap<Integer, Integer> inlineMap;  // inline count map (memory leak)
     private static HashMap<String, IntExpr> symbolMap = new HashMap<>(); // input name, symbol expr
     private Value condValue;
 
     public static ProgramState copy(ProgramState ps, Context ctx, Solver solver) {
+        // to do
         return null;
     }
 
@@ -75,7 +73,7 @@ public class programstate {
                 op1 = addOp(v1, ctx, solver);
             } else {
                 if (v1.isInputRelated()) {
-                    // to do 
+                    // to do
                 } else {
                     // to do
                 }
@@ -86,16 +84,16 @@ public class programstate {
                 // to do
             }
 
-            switch(op){                
+            switch(op){
                 // to do
-            }         
-        } catch(Exception e) {  
-            System.out.println("z3 exception");  
-            e.printStackTrace();  
+            }
+        } catch(Exception e) {
+            System.out.println("z3 exception");
+            e.printStackTrace();
         }
     }
 
-    programstate(Scope scope) {
+    ProgramState(Scope scope) {
         this.scope = scope;
         inlineMap = new HashMap<>();
     }
