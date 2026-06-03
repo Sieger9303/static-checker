@@ -75,6 +75,19 @@ make之前先执行
 
 （在make指令后添加 --java）
 
+请将expression type移动到src外 类似于下面的结构
+Lab/
+├── src/
+├── type/
+│   ├── ArrayType.java
+│   ├── FunctionType.java
+│   ├── IntType.java
+│   ├── PointerType.java
+│   └── Type.java
+├── utils/
+│   ├── Constants.java
+│   └── TreePrinter.java
+
 
 ## 静态检查器实验步骤
 
