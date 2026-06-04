@@ -85,9 +85,12 @@ Lab/
 │   ├── IntType.java
 │   ├── PointerType.java
 │   └── Type.java
-├── utils/
-│   ├── Constants.java
-│   └── TreePrinter.java
+├── expression/
+│   ├── ArithExpression.java
+│   ├── CallExpression.java
+│   ├── Expression.java
+│   ├── Num.java
+│   └── Variable.java
 ```
 
 ## 静态检查器实验步骤
